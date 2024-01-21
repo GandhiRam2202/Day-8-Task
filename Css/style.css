@@ -1,0 +1,81 @@
+.image{
+    background-image: url(../Images/1.png);
+    background-repeat: no-repeat;
+    
+    color: white;
+    background-size: cover;
+    overflow: hidden;
+   }
+.clo12
+{
+   height: 95vh;
+   overflow-y: auto;
+   overflow-x: hidden;
+}
+.content{
+    margin-left: 25vw;
+}
+    .drop{
+        position: relative;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+   
+    .drop-menu{
+        display:none; 
+        z-index: 1;
+    }
+    .drop-menu a{
+        text-decoration: none;
+        color: white;
+    }
+   
+    .drop:hover{
+        background-color: green;
+        width: 22.8vw;
+        color: white;
+        .drop-menu{
+            background-color: grey;
+            position: absolute;
+            width: 22.8vw;
+            display:block;
+        }
+        
+    }
+    .drop-menu div:hover{
+        
+        background-color: green;
+    }
+    .menu-line{
+        height:10px;
+        width: 20px;
+        background-color: black;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+        margin-bottom: 0px;
+    }
+    .menu{
+        display: none;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width:1199px) {
+
+        .clo12{
+            display:none
+        }
+        .content{
+            margin: 0vw;
+            width: 100vw;
+        }
+        .menu{
+            display: block;
+        }
+        .showmenu{
+            display: block;
+        }
+        
+    }
+
